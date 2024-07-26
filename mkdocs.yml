@@ -1,0 +1,4 @@
+site_name: Robotic System Integration Course
+markdown_extensions:
+  - mdx_truly_sane_lists
+
