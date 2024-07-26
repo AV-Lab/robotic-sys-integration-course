@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Robotic System Integration Course</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Robotic System Integration Course</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ros</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ros/Introduction%20to%20ROS/" class="dropdown-item">Introduction to ROS</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sys</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="sys/sys1/" class="dropdown-item">What is cloud computing?</a>
+</li>
+                                    
+<li>
+    <a href="sys/sys2/" class="dropdown-item">Setup AWS</a>
+</li>
+                                    
+<li>
+    <a href="sys/sys3/" class="dropdown-item">Back-end and Front-end Development</a>
+</li>
+                                    
+<li>
+    <a href="sys/sys4/" class="dropdown-item">REST API Basics</a>
+</li>
+                                    
+<li>
+    <a href="sys/sys5/" class="dropdown-item">Simple API using CGI Module</a>
+</li>
+                                    
+<li>
+    <a href="sys/sys6/" class="dropdown-item">Debugging REST API with Command Line</a>
+</li>
+                                    
+<li>
+    <a href="sys/sys7/" class="dropdown-item">More on RESTful Communication</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="ros/Introduction%20to%20ROS/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#robotic-system-integration-summer-course-2022" class="nav-link">Robotic System Integration | Summer Course 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#day-1-2-linux-basics" class="nav-link">Day 1-2: Linux Basics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#day-3-cloud-computing-basics" class="nav-link">Day 3: Cloud Computing Basics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#day-4-7-robot-operating-system" class="nav-link">Day 4-7: Robot Operating System</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#day-7-8-cloud-robotics" class="nav-link">Day 7-8: Cloud Robotics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#day-8-mini-project-2272022" class="nav-link">Day 8: Mini-project (22/7/2022)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img alt="sys-summer-2022" src="imgs/sys-summer-2022.jpg" /></p>
+<h2 id="robotic-system-integration-summer-course-2022">Robotic System Integration | Summer Course 2022</h2>
+<p><em>Designed and delivered by Eyad Shakab, Arjun Sharma, and Dr. Majid Khonji</em> 
+[July 13 - July 22]</p>
+<p>This high-level course teaches the basics of system integration using Linux OS and Robot Operating System (ROS). The objective is to build technical maturity and problem-solving skills to deal with diverse software efficiently and in a timely manner to get the task done. The course targets audiences from computer science (CS) backgrounds as well as those from other engineering disciplines as long as they are curious to learn beyond the instructions provided. For CS majors, the course will be more like a revision of basics but at the same time integrates different approaches that the student might not have been exposed to together.</p>
+<h2 id="day-1-2-linux-basics">Day 1-2: Linux Basics</h2>
+<p><em>By Eyad Shaklab</em></p>
+<p>Tasks:</p>
+<ul>
+<li><strong>Pre1</strong>:<a href="https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/linux-for-robotics/">Follow the interactive course by The Construct</a> </li>
+<li><strong>Pre2</strong> (Optional): <a href="https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/python-robotics/">Python 3 for Robotics</a></li>
+</ul>
+<h2 id="day-3-cloud-computing-basics">Day 3: Cloud Computing Basics</h2>
+<p><em>Designed by Majid Khonji, Supervised By Eyad Shaklab</em></p>
+<p><strong>Pre-requisites:</strong></p>
+<ul>
+<li><a href="https://www.hostinger.com/tutorials/linux-commands">Basics of Linux OS</a></li>
+<li><a href="https://www.ibm.com/cloud/learn/networking-a-complete-guide">Fundamentals of computer networks</a></li>
+</ul>
+<p><strong>Parts:</strong></p>
+<ul>
+<li><strong>Sys1</strong>: <a href="sys/sys1/">What is Amazon Web Server (AWS)</a></li>
+<li><strong>Sys2</strong>: <a href="sys/sys2/">Setup a clould server using AWS</a></li>
+<li><strong>Sys3</strong>: <a href="sys/sys3/">Back-end and front-end development crash course</a></li>
+</ul>
+<h2 id="day-4-7-robot-operating-system">Day 4-7: Robot Operating System</h2>
+<p><em>By Arjun Sharma</em></p>
+<ul>
+<li><strong>ROS1</strong>:Day 4 slides: <a href="ros/Lecture_1_Background.pdf">part 1</a> |  <a href="ros/Lecture_2_Introduction.pdf">part 2</a> | <a href="ros/Lecture_3_Installation_Setup.pdf">part 3</a></li>
+<li><strong>ROS2</strong>:Day 5 slides: <a href="ros/Lecture_4_Run_You_First_ROS_Program.pdf">part 1</a> | <a href="ros/Lecture_5_Communicate_with_ROS_Topics.pdf">part 2</a></li>
+<li><strong>ROS3</strong>:Day 6 - 7 (morning) slides: <a href="ros/Day3-4.pdf">download</a></li>
+</ul>
+<h2 id="day-7-8-cloud-robotics">Day 7-8: Cloud Robotics</h2>
+<p><em>Designed by Majid Khonji, Supervised by Arjun Sharma</em></p>
+<p>The objective here is to learn how to integrate one or more robots with a custom cloud server so that you can achieve some collaborative functionalities. We will try to perform those tasks using standard Linux tools avoiding fancy custom-made software as much as possible. The goal is to build a level of technical maturity at a system level that is generic enough to be applicable across domains. The knowledge you gain in this section will be highly transferrable to other domains outside robotics. <strong>It is important to highlight that the tutorial given here is by no mean the most efficient way to develop a production-ready REST API</strong>.</p>
+<h4 id="day-7-2172022">Day 7 (21/7/2022):</h4>
+<p><strong>Pre-requisites:</strong></p>
+<ul>
+<li>Basics of networking (ports and ips). If you are not familiar about the topic,  <a href="https://www.youtube.com/watch?v=AXrFCbD4-fU">watch this 10 min video</a>  before you proceed</li>
+<li>Understanding of <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP protocol</a> (a simple text based application protocol, running on top of TCP). <a href="https://www.youtube.com/watch?v=eesqK59rhGA">Here is an 8 min video tutorial</a></li>
+<li>Domain Name System (DNS), an application layer protocol. <a href="https://www.youtube.com/watch?v=mpQZVYPuDGU">Here is short video tutorial</a></li>
+<li>A working installation of Apache web server on your AWS instance from Day 3</li>
+</ul>
+<p><strong>Parts: Understanding Web API</strong></p>
+<ul>
+<li><strong>Sys4</strong>: <a href="sys/sys4/">Fundamentals of Web API: REST</a></li>
+<li><strong>Sys5</strong>: <a href="sys/sys5/">Building your first API using Common gateway Interface (CGI) on Apache 2</a></li>
+<li><strong>Sys6</strong>: <a href="sys/sys6/">Debugging REST API on basic level</a></li>
+</ul>
+<h2 id="day-8-mini-project-2272022">Day 8: Mini-project (22/7/2022)</h2>
+<p><strong>Pre-requisites</strong>: </p>
+<ul>
+<li>Ability to access to a cloud server (AWS, Google, or your <a href="https://help.dyn.com/remote-access/getting-started-with-remote-access/">Linux box at home with dynamic dns address + port forwarding (80 and 22)</a>)</li>
+<li><a href="/tutorials/s4">Fundamentals of REST</a></li>
+</ul>
+<p><strong>Parts:</strong></p>
+<ul>
+<li><strong>Sys7</strong>: <a href="sys/sys7/">More on RESTful Communication</a></li>
+<li>Start your mini-project</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<p><strong>Project: RESTful Robot - A Remote Tracking System</strong></p>
+<p style="color:red; font-weight:bold"> Deadline: 29/7/2022 </p>
+
+<p>The objective of this exercise is to build a small system that tracks your robots in the cloud. Due to limited time, we will build a simplified system using Turtlebot simulation, but the concept can scale and be applied to any robotic platform. Remember, a robot is simply a computer with sensors and actuators, so you might have a microcontroller (Arduino) connected to a temperature sensor, servo motor, and connected to a PC via a serial connection, USB. That is a legit robot. Increase the number of motors to four, connect a LiDAR and a webcam to the PC, and you get a car capable of autonomous driving. 
+In this project, we have two parts:</p>
+<ul>
+<li>Cloud server: which collects telemetry information from one or more robots</li>
+<li>Robot(s): which runs on your laptop. You will write a ROS node that sends POST requests to the server every second to update its location. In this project, you will run a simulated robot, but in principle, the same exact code would run on real robots.</li>
+</ul>
+<p><u>More precisely, you should perform the following tasks:</u></p>
+<ul>
+<li>Run a Turtlesim simulation. Execute turtlesim_node and  turtle_teleop_key (but you may try more sophisticated simulations as well).</li>
+<li>Remote server connection: Write a ROS node that reads the x and y coordinates of the robot and sends HTTP POST requests to your cloud. Please use three variables in your code to allow easy configuration, <code>robot_name</code>, <code>server_address</code>, and <code>api_delay</code>  where <code>api_delay</code> decides how much delay between subsequent API calls; set it to 1 sec.</li>
+<li>RESTful  API: your cloud server should follow the structure below
+    -  POST: accept a request following  <code>&lt;server_address&gt;/robot_name/x/y</code>, where <code>&lt;robot_name&gt;</code> is the name that you chose in the ROS node, and x and y are Turtle coordinates. You may implement a python code (or bash script or any language you like) that receives the query from CGI module and append the received coordinates to a file named <code>&lt;robot_name&gt;_loc.csv</code>. You can choose any format for the file, but I suggest something like <code>yyyy-mm-dd hh:mm:ss, x, x</code> for each line.
+    -  GET: <code>&lt;server_address&gt;/&lt;robot_name&gt;</code> returns a simple HTML that shows a PNG plot for robot location. You may implement it in python and use (https://matplotlib.org/) to output a PNG plot. You may need <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html"><code>plt.plot</code></a> and <code>plt.savefig(&lt;robot_name&gt;.png)</code></li>
+<li>Test your code with 2-3 of your colleagues and check if your RESTful API is functional</li>
+<li>Optional: 
+    - Create an additional API that shows all robot locations: a GET API <code>&lt;server_address&gt;/All</code>.
+    - Try to show a <a href="https://canvasjs.com/html5-javascript-dynamic-chart/">live plot using Javascript library</a>. </li>
+</ul>
+<p><strong>Submission Instruction</strong>:</p>
+<ul>
+<li>Send an Email to <code>eyad.shaklab at ku.ac.ae</code> and <code>arjun.sharma at ku.ac.ae</code>, and CC <code>majid.khonji at ku.ac.ae</code>,  titled:
+    - <code>[AV-lab mini-project]: &lt;first_name&gt;_&lt;last_name&gt;</code></li>
+<li>In the email, provide the following:
+    - Your <code>&lt;server_address&gt;</code>. Make sure the server will be running for at least 1 week after your submission, if your server is free. if not, then please  indicate in the email that the server is off.  Our engineer will contact you to switch on the server.
+    - Implemented APIs: indicate which APIs are implemented 
+    - Attach your ROS node, named <code>&lt;first_name&gt;_&lt;last_name&gt;.py</code> (if implemented in python)
+        - For computer science folks, you may send your git repo address. For those who are not familiar with <code>git</code>, you may <a href="https://www.youtube.com/watch?v=8JJ101D3knE">watch this tutorial</a> and decide by yourself.</li>
+</ul>
+<hr />
+<p><strong>Practical Tips:</strong></p>
+<ol>
+<li>
+<p><strong>Running Linux Inside Windows</strong>: </p>
+<ul>
+<li><strong>Problem</strong>: Slow performance in a virtual machine or the inconvenience of dual-boot systems.</li>
+<li><strong>Solution</strong>: Use Windows Subsystem for Linux (WSL). It allows you to run Linux commands within Windows OS, offering better performance than a virtual machine. <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Beginner's Guide to WSL</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Text Editor Choices</strong>:</p>
+<ul>
+<li><strong>Basic</strong>: Use 'gedit' for a user-friendly graphical interface, ideal for local editing.</li>
+<li><strong>Advanced</strong>: For power users, 'vim' is a highly efficient text editor. It requires a learning curve but significantly enhances productivity. <a href="https://www.youtube.com/watch?v=ggSyF1SVFr4">Vim Tutorial for Beginners</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Terminal Multiplexer</strong>:</p>
+<ul>
+<li><strong>Issue</strong>: Losing SSH connection can terminate all running processes.</li>
+<li><strong>Solution</strong>: Use a terminal multiplexer like 'tmux'. It keeps commands running in the background even after disconnection, allowing you to reattach later. It also enables splitting your terminal into multiple areas. <a href="https://linuxize.com/post/getting-started-with-tmux">Getting Started with tmux</a>. See also: <a href="https://www.youtube.com/watch?v=Yl7NFenTgIo">Video Tutorial</a>. Install with: <code>sudo apt install tmux</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tiling Window Manager for Linux</strong>:</p>
+<ul>
+<li><strong>Overview</strong>: Linux's flexible architecture allows extensive customization, including the window manager, which organizes window placements.</li>
+<li><strong>Recommendation</strong>: Try a tiling window manager like 'i3', which automatically arranges windows into tiles, reducing the need for manual adjustment and enhancing productivity. <a href="https://i3wm.org/">Getting Started with i3</a>. Watch: <a href="https://www.youtube.com/watch?v=j1I63wGcvU4">Video Tutorial</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>User-Friendly Shell Alternative</strong>:</p>
+<ul>
+<li><strong>Default</strong>: Ubuntu's standard shell is Bash.</li>
+<li><strong>Alternative</strong>: Consider 'fish' (friendly interactive shell), known for its excellent auto-complete feature and useful shortcuts. Note: Not all standard bash commands work out-of-the-box. To load bash configuration files in 'fish', use the 'bass' plugin. <a href="https://www.youtube.com/watch?v=C2a7jJTh3kU">Fish Shell Tutorial</a>. More info: <a href="https://github.com/edc/bass">Bass Plugin on GitHub</a>.</li>
+</ul>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-07-26 16:21:50.428660+00:00
+-->

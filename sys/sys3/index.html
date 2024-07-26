@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Back-end and Front-end Development - Robotic System Integration Course</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Robotic System Integration Course</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ros</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ros/Introduction%20to%20ROS/" class="dropdown-item">Introduction to ROS</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sys</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../sys1/" class="dropdown-item">What is cloud computing?</a>
+</li>
+                                    
+<li>
+    <a href="../sys2/" class="dropdown-item">Setup AWS</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Back-end and Front-end Development</a>
+</li>
+                                    
+<li>
+    <a href="../sys4/" class="dropdown-item">REST API Basics</a>
+</li>
+                                    
+<li>
+    <a href="../sys5/" class="dropdown-item">Simple API using CGI Module</a>
+</li>
+                                    
+<li>
+    <a href="../sys6/" class="dropdown-item">Debugging REST API with Command Line</a>
+</li>
+                                    
+<li>
+    <a href="../sys7/" class="dropdown-item">More on RESTful Communication</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../sys2/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../sys4/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#install-a-web-server-on-the-cloud" class="nav-link">Install a web server on the cloud</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#front-end-development" class="nav-link">Front-end Development</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#back-end-development" class="nav-link">Back-end Development</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#optional" class="nav-link">Optional</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="install-a-web-server-on-the-cloud">Install a web server on the cloud</h1>
+<p>The <strong>LAMP stack</strong> is a popular <a href="https://phoenixnap.com/glossary/what-is-open-source">open-source solution stack</a> used primarily in web development.</p>
+<p>LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the LAMP acronym:</p>
+<ul>
+<li><strong>Linux</strong> is an operating system used to run the rest of the components.</li>
+<li><a href="https://phoenixnap.com/kb/install-apache-on-centos-7"><strong>Apache</strong> <strong>HTTP Server</strong></a> is a web server software used to serve static web pages.</li>
+<li><strong>MySQL</strong> is a <a href="https://phoenixnap.com/kb/what-is-a-relational-database">relational database management system</a> used for creating and managing web databases, but also for <a href="https://phoenixnap.com/kb/best-database-software">data</a><a href="https://phoenixnap.com/kb/data-warehouse-architecture-explained">warehousing</a>, application logging, e-commerce, etc.</li>
+<li><strong>PHP, Perl, and Python</strong> are programming languages are used to create web applications.</li>
+</ul>
+<p>Each component represents an essential layer of the stack. Together, the components are used to create database-driven, dynamic websites.</p>
+<p>Follow the following instructions from AWS documentation to install a web server on your AWS instance.
+*  <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2022.html">Install LAMP on Amazon Linux 2022</a></p>
+<h1 id="front-end-development">Front-end Development</h1>
+<p>To refresh your knowledge on front-end development, you may go through the 4 part crash course:
+* Part 1</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O9Uauq-Gd0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<ul>
+<li>Part 2</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d5HnAlAFt40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<ul>
+<li>Part 3</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SkuHUUyCKIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<ul>
+<li>Part 4</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5OCrKVNqCcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><br></p>
+<h1 id="back-end-development">Back-end Development</h1>
+<p>Back-end refers to the server side of web development. In other words, the server can serve multiple clients (or computers). Although HTML/CSS/JS provides a rich user interface, it runs entirely on clients' machines; in other words, it is completely decentralized and agnostic of different clients, which is a limiting factor. What if you want to perform some computation that relies on multiple clients? Say you want to show how many items are available in stock based on online customer records. Then you would need a <code>server</code> that aggregates the computation. LAMP (Linux, Apache, MySQL, PHP) is a software stack that allows running server-side applications using primarily PHP language (and another language),  along with MySQL database and Apache server, which orchestrates HTTP communication.</p>
+<p>In the next classes, we will learn how to develop a simple back-end for your robotic applications. By simple we mean using basic commands and tools in Linux avoiding specialized software and libraries as much as possible.</p>
+<h2 id="optional">Optional</h2>
+<h3 id="native-python-server">Native Python Server</h3>
+<p>Django and LAMP are technologies for back-end development that involves lots functionalities and performs security checks. If you don't need all these, and you want a simple server for prototype, you may use ptyhon's native <a href="https://docs.python.org/3/library/http.server.html"><code>http.server</code> </a> library. Below is a short video tutorial.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hFNZ6kdBgO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 id="flask">Flask</h3>
+<p>Flask is a small and lightweight Python web framework that provides useful tools and features that make creating web applications in Python easier. It gives developers flexibility and is a more accessible framework for new developers since you can build a web application quickly using only a single Python file. Here is a <a href="https://www.youtube.com/watch?v=MwZwr5Tvyxo&amp;t=15s">video tutorial</a>. 
+Flask has it's own lightweight web server, but it is not suitable for production. You can run Apache with Flask by enabling <code>mod_wsgi</code></p>
+<h3 id="django">Django</h3>
+<p>You may try <a href="https://www.w3schools.com/django/">Django framework that allows python  for backend development using python</a>
+* <a href="https://docs.djangoproject.com/en/4.0/topics/install/">Install Django server on your EC2 instance </a>
+* <a href="https://www.w3schools.com/django/">Go through Django tutorials</a></p>
+<h3 id="php">PHP</h3>
+<p>PHP is an old technology for back-end development and is tightly integrated with Apache. (I am personally not a big fan of PHP though.). Follow video below <a href="https://www.youtube.com/embed/ysJjgzcZOPY"><code>Learn PHP in Under 15 Minutes!</code></a> and run experiments in your AWS server.</p>
+<p>For more in-depth tutorial, you may follow <a href="https://www.w3schools.com/php/default.asp">W3 School tutorial</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

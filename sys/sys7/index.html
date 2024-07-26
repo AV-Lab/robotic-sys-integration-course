@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>More on RESTful Communication - Robotic System Integration Course</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Robotic System Integration Course</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Ros</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ros/Introduction%20to%20ROS/" class="dropdown-item">Introduction to ROS</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Sys</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../sys1/" class="dropdown-item">What is cloud computing?</a>
+</li>
+                                    
+<li>
+    <a href="../sys2/" class="dropdown-item">Setup AWS</a>
+</li>
+                                    
+<li>
+    <a href="../sys3/" class="dropdown-item">Back-end and Front-end Development</a>
+</li>
+                                    
+<li>
+    <a href="../sys4/" class="dropdown-item">REST API Basics</a>
+</li>
+                                    
+<li>
+    <a href="../sys5/" class="dropdown-item">Simple API using CGI Module</a>
+</li>
+                                    
+<li>
+    <a href="../sys6/" class="dropdown-item">Debugging REST API with Command Line</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">More on RESTful Communication</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../sys6/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#more-on-restful-communication" class="nav-link">More on RESTful Communication</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#mod-rewrite-with-post-requests" class="nav-link">Mod Rewrite with POST requests</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#variables" class="nav-link">Variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#web-communication-in-python-client-side" class="nav-link">Web communication in Python - Client side</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#web-communication-in-python-server-side" class="nav-link">Web communication in Python - Server side</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="more-on-restful-communication">More on RESTful Communication</h1>
+<p>REST APIs use <strong>Uniform Resource Identifiers (URIs) to address resources</strong>. REST API designers should create URIs that convey a REST API's resource model to the potential clients of the API. When resources are named well, an API is intuitive and easy to use.</p>
+<h1 id="mod-rewrite-with-post-requests">Mod Rewrite with POST requests</h1>
+<p>To partition API to POST and GET APIs, you need to modify Apache config to include some conditions.
+* Open your Apache config file, mine is located in <code>/etc/apache2/sites-available/000-default.conf</code>, and add the following with root permission</p>
+<pre><code class="language-xml">RewriteCond %{REQUEST_METHOD} ^POST$ [NC]
+RewriteRule robot cgi/test.sh
+</code></pre>
+<p>The condition specifies how to redirect the address based on the request type. Check <a href="https://httpd.apache.org/docs/current/mod/mod_rewrite.html">Apache site</a> for more details about <code>RewriteCond</code>. 
+* Restart your Apache server
+* To test POST requests, you cannot use your browser easily because the browser operates mainly on GET part of HTTP (unless you create a custom HTML form to submit data). Try <code>curl</code> command (<code>sudo apt install curl</code> if you don't have it on your system)</p>
+<pre><code class="language-bash">curl -X POST  '&lt;address&gt;/robot'
+</code></pre>
+<ul>
+<li>Check if you receive correct HTML response. You can use the same command for GET requests (replacing POST by GET). <code>curl</code> is quite simpler than <code>nc</code> as you don't need to specify HTTP headers. However, it is good to experience low-level interactions, particularly with HTTP protocol, a text-based protocol intended by design to help humans debug easily without sophisticated parsing tools.</li>
+</ul>
+<h1 id="variables">Variables</h1>
+<p>Now, let's use the regex to have a POST URI that takes any number. Replace the RewriteRule by the following:</p>
+<pre><code>RewriteRule ^robot/([0-9]*\.?[0-9]*$) cgi/test.sh?data=$1
+</code></pre>
+<p>Let's parse it now:
+* <code>^</code> indicates the beginning of URI, where <code>$</code> marks the end. So <code>robot/</code> should be the first sequence of letters. <code>()</code> means a group of letters and is also used as a placeholder for variables in <code>mod_rewrite</code>. <code>[0-9]</code> means any number from 0 to 9, <code>*</code> means the previous character type (or block) is repeated once or multiple times. <code>+</code> means it is repeated 0 or many times. <code>\</code> is a skip letter for special characters like <code>.</code>. <code>?</code> says the previous char or block occurs zero or exactly one time.
+* Now, test the URI with a POST request</p>
+<pre><code>curl -X POST  '&lt;address&gt;/robot/123.23'
+</code></pre>
+<ul>
+<li>The output should be</li>
+</ul>
+<pre><code>&lt;h1&gt;Hello world from NSR 4.0!&lt;/h1&gt;
+&lt;h2&gt;My name is XXX &lt;/h2&gt;
+&lt;h2&gt; data=123.23 is selected&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Try different addresses and see if the regex rule works as intended</li>
+</ul>
+<pre><code>curl -X POST  '&lt;address&gt;/robot/123.23'
+curl -X POST  '&lt;address&gt;/robot/532'
+curl -X POST  '&lt;address&gt;/robot/12a3.23'  # Error 404 Not found
+</code></pre>
+<h1 id="web-communication-in-python-client-side">Web communication in Python - Client side</h1>
+<p>It is quite easy to make HTTP requests in python using libraries like <code>requests</code>. Below is an example code.
+* Lets make a simple GET request to your previously designed API. Create a file, named <code>req.py</code>  (or run interatively using ipython or Jupiter notebook )</p>
+<pre><code class="language-python">import requests
+url = '&lt;ur server dns&gt;/select/b'
+x = requests.get(url)
+print(x.text)
+</code></pre>
+<ul>
+<li>If you run <code>print(x)</code> you will get HTTP response status code, which follows a standard protocol:
+    1.  Informational responses (<code>100</code>–<code>199</code>)
+    2.  Successful responses (<code>200</code>–<code>299</code>)
+    3.  Redirection messages (<code>300</code>–<code>399</code>)
+    4.  Client error responses (<code>400</code>–<code>499</code>)
+    5.  Server error responses (<code>500</code>–<code>599</code>)
+    Check <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses">this link</a> for more details.</li>
+<li>You can replace <code>x = requests.get(url)</code> by <code>x = requests.post(url)</code> to run a POST request.  POST allows attaching additional content to requests. One popular attachment is JSON data, a simple text-based data structure for key-value pairs (and more). So, you may modify the above code to attach content to your request.</li>
+</ul>
+<pre><code class="language-python">myobj = {'somekey': 'somevalue'}
+x = requests.post(url, json = myobj)
+</code></pre>
+<h1 id="web-communication-in-python-server-side">Web communication in Python - Server side</h1>
+<p>Instead of relying on bash script (which in many cases is useful for simple application), we will use a fully fledged programming language Python. 
+* Create a file <code>&lt;web root&gt;/cgi/test.py</code>. </p>
+<pre><code class="language-bash">sudo touch &lt;web root&gt;/cgi/test.py
+</code></pre>
+<ul>
+<li>Give the the write permission and owner</li>
+</ul>
+<pre><code class="language-bash">cd &lt;web root&gt;/cgi
+sudo chown www-data:www-data *
+sudo chmod 755 *
+</code></pre>
+<p><code>*</code> means all files in Bash.
+* Now, you may modify to return a JSON response, which is more convenient response for an API (since apps calling the API can easily parse it, unlike html). We want the output to look like</p>
+<pre><code>HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: &lt;decided automatically&gt;
+
+{&quot;number&quot;:&quot;&lt;received number&gt; * 10&quot;}
+</code></pre>
+<ul>
+<li>You may produce this output using bash script with <code>cgi/test.sh</code>, but I'd personally go with a programming language such as Python. Below is an example code, which is self-explanatory</li>
+</ul>
+<pre><code class="language-python">#! /usr/bin/python3
+import os
+
+# Parsing QUERY_STRING
+q = os.getenv('QUERY_STRING')
+num_str = q.split('=')[1]
+num = int(num_str) * 10
+
+# Generating HTTP  response with JSON
+response = &quot;{\&quot;number\&quot;: \&quot;%d\&quot;} &quot;%num
+print(&quot;Content-Type: application/json&quot;)
+print(&quot;Content-Length: %d\n\n&quot;% len(response))
+print(response);
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
